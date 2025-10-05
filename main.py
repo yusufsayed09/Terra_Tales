@@ -2,7 +2,7 @@ from flask import Flask, render_template
 app = Flask(__name__)
 @app.route('/')
 def home_page():
-    return render_template('home.html')
+    return render_template('index.html')
 @app.route('/melting')
 def about_page():
     return render_template("melting.html",about_page="/melting.html")
@@ -23,4 +23,5 @@ def cropland2_page():
     return render_template('cropland2.html',cropland_page="/cropland2.html")
 @app.route('/why')
 def why_page():
+
     return render_template('why.html',why_page="/why.html")
